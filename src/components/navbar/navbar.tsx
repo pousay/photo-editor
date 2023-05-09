@@ -18,7 +18,9 @@ function Navbar() {
           {photo !== null && <Save />}
           <input
             onChange={(e) => {
-              dispatch(upload(e.target.files[0]));
+              if (e.target.files !== null) {
+                dispatch(upload(e.target.files[0]));
+              }
             }}
             className="hidden"
             id="uploadFile"

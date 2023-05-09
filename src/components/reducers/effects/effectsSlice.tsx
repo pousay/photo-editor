@@ -12,25 +12,25 @@ export const effectsSlice = createSlice({
     saturate: 1,
   },
   reducers: {
-    contrast: (state: any, action: any) => {
+    contrast: (state: any, action: { payload: number }) => {
       state.contrast = action.payload;
     },
-    opacity: (state: any, action: any) => {
+    opacity: (state: any, action: { payload: number }) => {
       state.opacity = action.payload;
     },
-    brightness: (state: any, action: any) => {
+    brightness: (state: any, action: { payload: number }) => {
       state.brightness = action.payload;
     },
-    blur: (state: any, action: any) => {
+    blur: (state: any, action: { payload: number }) => {
       state.blur = action.payload;
     },
-    hue: (state: any, action: any) => {
+    hue: (state: any, action: { payload: number }) => {
       state.hue = action.payload;
     },
-    sepia: (state: any, action: any) => {
+    sepia: (state: any, action: { payload: number }) => {
       state.sepia = action.payload;
     },
-    saturate: (state: any, action: any) => {
+    saturate: (state: any, action: { payload: number }) => {
       state.saturate = action.payload;
     },
     RESET: (state: any) => {

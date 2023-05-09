@@ -6,7 +6,7 @@ export const photoSlice = createSlice({
     photoURl: null,
   },
   reducers: {
-    upload: (state: any, action: any) => {
+    upload: (state: any, action: { payload: any }) => {
       state.photoURl = action.payload;
     },
   },
